@@ -1,5 +1,6 @@
 package com.arcade.games.snake;
 
+import com.arcade.engine.GameLogic;
 import com.arcade.engine.input.InputHandler;
 import com.arcade.engine.state.GameOverState;
 import com.arcade.engine.state.MenuState;
@@ -10,7 +11,7 @@ import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 import java.util.Random;
 
-public class SnakeGame {
+public class SnakeGame implements GameLogic {
     private static final int TILE_SIZE = 20;
     private static final int WIDTH = 800 / TILE_SIZE;  // 40칸
     private static final int HEIGHT = 600 / TILE_SIZE; // 30칸

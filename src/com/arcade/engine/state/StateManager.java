@@ -11,7 +11,7 @@ public class StateManager {
     private GameState currentState;
 
     public StateManager() {
-        // 애플리케이션 시작 시 초기 상태를 MenuState로 지정
+        // 애플리케이션 시작 시 초기 상태를 MenuState로 지정 (메뉴에서 게임 선택 가능)
         this.currentState = new MenuState();
     }
 
