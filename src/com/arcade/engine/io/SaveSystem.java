@@ -11,7 +11,14 @@ import java.io.ObjectOutputStream;
  * Object I/O Streams를 사용하여 Java 객체(Record) 자체를 바이너리 형태로 안전하게 기록합니다.
  */
 public class SaveSystem {
-    private static final String SAVE_FILE_NAME = "arcade_highscore.dat";
+    private static String SAVE_FILE_NAME = "arcade_highscore.dat";
+
+    /**
+     * 테스트 목적으로 저장 파일 이름을 변경합니다.
+     */
+    public static void setSaveFileName(String fileName) {
+        SAVE_FILE_NAME = fileName;
+    }
 
     /**
      * 파일에서 최고 점수를 불러옵니다. 파일이 없거나 에러 시 0을 반환합니다.

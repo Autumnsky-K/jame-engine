@@ -37,4 +37,4 @@ bin/
 *.jar
 
 # Data Files (우리가 만든 점수 데이터 파일)
-*.dat
+*.datlib/
